@@ -1,0 +1,36 @@
+{
+  "name": "sunsil-energy-website",
+  "version": "1.0.0",
+  "description": "Sunsil energy's website project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvxi/sunsil-energy-website.git"
+  },
+  "keywords": [
+    "sunsil",
+    "energy",
+    "photovoltaics",
+    "website",
+    "solar",
+    "panel"
+  ],
+  "author": "Szymon Gwóźdź",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvxi/sunsil-energy-website/issues"
+  },
+  "homepage": "https://github.com/dvxi/sunsil-energy-website#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "postcss-cli": "^10.0.0"
+  }
+}
