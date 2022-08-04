@@ -10794,6 +10794,14 @@ h1, .h1 {
   border-radius: 1.5rem;
 }
 
+.bi {
+  font-size: calc(4rem + 0.9vw);
+}
+
+.mt-122-5 {
+  margin-top: calc(122px + 6rem);
+}
+
 .nav-section {
   z-index: 2;
 }
@@ -10817,14 +10825,15 @@ h1, .h1 {
   object-fit: cover;
   height: 100%;
 }
-.homepage-section .bi {
-  font-size: calc(4rem + 0.9vw);
-}
 .homepage-section .houseOffer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
 }
 .homepage-section .companyOffer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/factory.jpg");
+}
+
+.about-section .aboutHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sun1.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
