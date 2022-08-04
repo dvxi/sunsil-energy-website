@@ -1,6 +1,8 @@
 //IMPORT bootstrap
 $primary: #9ea93f;
 $secondary: #60712f;
+$btn-color: #fff;
+$btn-hover-color: #fff;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -46,4 +48,38 @@ h1 {
 
 .vh-60 {
   height: 60vh;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9ea93f;
+  --bs-btn-border-color: #9ea93f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #adb65c;
+  --bs-btn-hover-border-color: #a8b252;
+  --bs-btn-focus-shadow-rgb: 134, 144, 54;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b1ba65;
+  --bs-btn-active-border-color: #a8b252;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #9ea93f;
+  --bs-btn-disabled-border-color: #9ea93f;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #9ea93f;
+  --bs-btn-border-color: #9ea93f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #9ea93f;
+  --bs-btn-hover-border-color: #9ea93f;
+  --bs-btn-focus-shadow-rgb: 158, 169, 63;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #9ea93f;
+  --bs-btn-active-border-color: #9ea93f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #9ea93f;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #9ea93f;
+  --bs-gradient: none;
 }

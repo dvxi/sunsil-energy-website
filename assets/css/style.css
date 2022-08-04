@@ -10802,6 +10802,40 @@ h1, .h1 {
   height: 60vh;
 }
 
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9ea93f;
+  --bs-btn-border-color: #9ea93f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #adb65c;
+  --bs-btn-hover-border-color: #a8b252;
+  --bs-btn-focus-shadow-rgb: 134, 144, 54;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b1ba65;
+  --bs-btn-active-border-color: #a8b252;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #9ea93f;
+  --bs-btn-disabled-border-color: #9ea93f;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #9ea93f;
+  --bs-btn-border-color: #9ea93f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #9ea93f;
+  --bs-btn-hover-border-color: #9ea93f;
+  --bs-btn-focus-shadow-rgb: 158, 169, 63;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #9ea93f;
+  --bs-btn-active-border-color: #9ea93f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #9ea93f;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #9ea93f;
+  --bs-gradient: none;
+}
+
 .nav-section {
   z-index: 2;
 }
@@ -10841,6 +10875,9 @@ h1, .h1 {
 
 .offer-section .offerHeader {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sun1.jpg");
+}
+.offer-section .bigIcon {
+  font-size: calc(4rem + 0.9vw);
 }
 
 /*# sourceMappingURL=style.css.map */
