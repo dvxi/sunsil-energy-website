@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+.offer2-section {
+
+  .offerHeader {
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)),
+          url("../images/sun1.jpg");
+  }
+
+  .bigIcon {
+    font-size: calc(4rem + 0.9vw)
+  }
+}

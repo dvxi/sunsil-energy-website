@@ -10880,4 +10880,18 @@ h1, .h1 {
   font-size: calc(4rem + 0.9vw);
 }
 
+.offer2-section .offerHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sun1.jpg");
+}
+.offer2-section .bigIcon {
+  font-size: calc(4rem + 0.9vw);
+}
+
+.offer2-section .offerHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sun1.jpg");
+}
+.offer2-section .bigIcon {
+  font-size: calc(4rem + 0.9vw);
+}
+
 /*# sourceMappingURL=style.css.map */
