@@ -15,6 +15,30 @@ h1 {
   font-weight: 800 !important;
 }
 
+.onMouseGrow {
+  transition: transform .2s;
+}
+
+.onMouseGrow:hover {
+  transform: scale(1.02);
+}
+
+.onMouseUp {
+  transition: transform .2s;
+}
+
+.onMouseUp:hover {
+  transform: translate(0, -10px);
+}
+
+.onMouseRight {
+  transition: transform .2s;
+}
+
+.onMouseRight:hover {
+  transform: translate(10px, 0);
+}
+
 .header {
   height: 40vh;
   width: 100%;
@@ -32,6 +56,20 @@ h1 {
   h1 {
     position: absolute;
   }
+}
+
+.headerFoto {
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url("../images/sun3.jpg");
+}
+
+.headerKlim {
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url("../images/air.jpg");
 }
 
 .mt-5 {

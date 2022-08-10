@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="nav" class="nav-section">
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav id="navbar-1" class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid border border-primary rounded-4 py-3 px-4 my-3 mx-5 bg-light shadow justify-content-center">
           <a class="navbar-brand fw-bold text-primary" href="#">
             PV FOTON
@@ -22,189 +22,563 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Strona główna</a>
-              <a class="nav-link" href="./about2.html">O nas</a>
-              <a class="nav-link" href="./offer.html">Dla domu</a>
-              <a class="nav-link" href="./offer2.html">Dla firmy</a>
-              <a class="nav-link" href="./contact.html">Kontakt</a>
+              <a class="nav-link" href="#homepage">Strona główna</a>
+              <a class="nav-link" href="#about">O nas</a>
+              <a class="nav-link" href="#offer">Dla domu</a>
+              <a class="nav-link" href="#offer2">Dla firmy</a>
+              <a class="nav-link" href="#contact">Kontakt</a>
             </div>
           </div>
         </div>
       </nav>
     </section>
-    <section id="homepage" class="homepage-section">
-      <div id="carouselExampleCaptions" class="carousel slide vh-100" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner vh-100">
-          <div class="carousel-item active vh-100">
-            <img src="./assets/images/sun1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block">
-              <p class="display-6 fw-bold">Sunsil Energy to firma oferująca montaż wysokiej jakości paneli słonecznych</p>
-              <p class="lead">Dzięki naszym usługom znacząco zmniejszysz opłaty za prąd, jak i przyczynisz się do potępującej transformacji energetycznej w Polsce.</p>
-            </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-1" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section id="homepage" class="homepage-section">
+        <!--<div id="carouselExampleCaptions" class="carousel slide vh-100" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-item vh-100">
-            <img src="./assets/images/sun2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block">
-              <p class="display-6 fw-bold">Jakieś inne informacje na temat firmy</p>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-            </div>
-          </div>
-          <div class="carousel-item vh-100">
-            <img src="./assets/images/sun3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block">
-              <p class="display-6 fw-bold">Jeszcze wiecej ciekawostek</p>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ve</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col-md-10 col-xl-6 mx-auto text-center">
-            <h1 class="display-6">Korzyści fotowoltaiki z Sunsil</h1>
-            <p>Korzystanie z naszych usług sprawia, że stajesz się beneficjentem poniższych udogodnień</p>
-          </div>
-        </div>
-        <div class="row mt-4 text-center">
-          <div class="col-12 col-md-4" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-star text-primary"></i>
+          <div class="carousel-inner vh-100">
+            <div class="carousel-item active vh-100">
+              <img src="./assets/images/sun1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block">
+                <p class="display-6 fw-bold">Sunsil Energy to firma oferująca montaż wysokiej jakości paneli słonecznych</p>
+                <p class="lead">Dzięki naszym usługom znacząco zmniejszysz opłaty za prąd, jak i przyczynisz się do potępującej transformacji energetycznej w Polsce.</p>
               </div>
-              <div class="col-12">
-                <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
-                <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+            </div>
+            <div class="carousel-item vh-100">
+              <img src="./assets/images/sun2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block">
+                <p class="display-6 fw-bold">Jakieś inne informacje na temat firmy</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <img src="./assets/images/sun3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block">
+                <p class="display-6 fw-bold">Jeszcze wiecej ciekawostek</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ve</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-shield text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
-                <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>-->
+        <div class="container-fluid vh-100">
+          <div class="row text-center text-white">
+            <div class="col bg-primary align-items-center justify-content-center vh-100 d-flex headerFoto">
+              <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                  <p class="fs-1 fw-bold">Instalacja fotowoltaiki</p>
+                  <p>Sprawdź naszą ofertę paneli fotowoltaicznych. Obsługujemy zarówno osoby fizyczne jak i firmy. Postaramy się spełnić wszystkie Twoje oczekiwania.</p>
+                  <a type="button" class="btn btn-outline-light btn-lg mt-4" href="#offer">Fotowoltaika</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-clipboard2-data text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
-                <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+            <div class="col bg-secondary align-items-center justify-content-center vh-100 d-flex headerKlim">
+              <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                  <p class="fs-1 fw-bold">Instalacja klimatyzacji</p>
+                  <p>Sprawdź naszą ofertę montażu klimatyzacji. Obsługujemy zarówno osoby fizyczne jak i firmy. Postaramy się spełnić wszystkie Twoje oczekiwania.</p>
+                  <a type="button" class="btn btn-outline-light btn-lg mt-4" href="#offer2">Klimatyzacja</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-10 col-xl-6  mx-auto text-center">
-            <h1 class="display-6">Który rodzaj oferty Cię interesuje?</h1>
-            <p>W zależności od Twoich potrzeb dostosujemy ofertę tak, by spełniała wszelkie oczekiwania</p>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-10 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Korzyści fotowoltaiki z Sunsil</h1>
+              <p>Korzystanie z naszych usług sprawia, że stajesz się beneficjentem poniższych udogodnień</p>
+            </div>
           </div>
-        </div>
-        <div class="row text-center mt-4 text-white g-3">
-          <div class="col-12 col-md-6" data-aos="fade-up">
-            <div class="p-3 py-4 rounded-4 shadow-sm houseOffer">
-              <h2 class="fw-bold my-4">Dom</h2>
+          <div class="row mt-4 text-center">
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-star text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
+                  <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-shield text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
+                  <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-clipboard2-data text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Najwyższa jakość obsługi</h2>
+                  <p>Każdy klient obsługiwany jest przy zachowaniu najwyższych standardów jakości. Oferowane przez nas usługi wypadają świetnie w porównaniu z konkurencją, a popierają to liczne rankingi i statystyki.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-10 col-xl-6  mx-auto text-center">
+              <h1 class="display-6">Który rodzaj oferty Cię interesuje?</h1>
               <p>W zależności od Twoich potrzeb dostosujemy ofertę tak, by spełniała wszelkie oczekiwania</p>
-              <a type="button" class="btn btn-outline-light mt-4" href="./offer.html">Sprawdź ofertę dla domu</a>
             </div>
           </div>
-          <div class="col-12 col-md-6" data-aos="fade-up">
-            <div class="p-3 py-4 bg-primary rounded-4 shadow-sm companyOffer">
-              <h2 class="fw-bold my-4">Firma</h2>
-              <p>W zależności od Twoich potrzeb dostosujemy ofertę tak, by spełniała wszelkie oczekiwania</p>
-              <a type="button" class="btn btn-outline-light mt-4" href="./offer2.html">Sprawdź ofertę dla firmy</a>
+          <div class="row text-center mt-4 text-white g-3">
+            <div class="col-12 col-md-6" data-aos="fade-up">
+              <div class="p-3 py-4 rounded-4 shadow-sm houseOffer onMouseGrow">
+                <h2 class="fw-bold my-4">Osoba fizyczna</h2>
+                <p>Jeżeli jesteś klientem indywidualnym i interesuje Cię instalacja paneli np. na Twoim domu, to tu znajdziesz ofertę dla siebie.</p>
+                <a type="button" class="btn btn-outline-light mt-4" href="./offer.html">Sprawdź ofertę dla osoby fizycznej</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-up">
+              <div class="p-3 py-4 bg-primary rounded-4 shadow-sm companyOffer onMouseGrow">
+                <h2 class="fw-bold my-4">Firma</h2>
+                <p>Jeżeli prowadzisz firmę i szukasz sposobów na wprowadzenie nowych oszczedności i rozwój działalności, tu znajdziesz ofertę dla siebie.</p>
+                <a type="button" class="btn btn-outline-light mt-4" href="./offer2.html">Sprawdź ofertę dla firmy</a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-10 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Sposób przebiegu Twojej instalacji</h1>
+              <p>Obsługa klienta w naszej firmie przebiega wedle poniższych 4 kroków. Dzięki takiemu systemowi jesteśmy w stanie obsłużyć Cie szybciej, a jako nasz klient masz większą wiedzę na temat oferty.</p>
+            </div>
+          </div>
+          <div class="row mt-4 text-center">
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-1-circle text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Konsultacja</h4>
+                  <p>Bezpłatna rozmowa telefoniczna umożliwi ustalenie podstawowych informacji</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-2-circle text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Audyt</h4>
+                  <p>Bezpłatny audyt pozwoli przeprowadzić pomiary i oszacować koszty</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-3-circle text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Montaż</h4>
+                  <p>Profesjonalny montaż przez naszych ekspertów przebiegnie bardzo sprawnie</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-4-circle text-primary"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Gwarancja</h4>
+                  <p>Oferujemy również wieloletnią gwarancję i pomoc w razie jakichkolwiek problemów</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-10 col-xl-6 mx-auto text-center">
-            <h1 class="display-6">Sposób przebiegu Twojej instalacji</h1>
-            <p>Obsługa klienta w naszej firmie przebiega wedle poniższych 4 kroków. Dzięki takiemu systemowi jesteśmy w stanie obsłużyć Cie szybciej, a jako nasz klient masz większą wiedzę na temat oferty.</p>
-          </div>
-        </div>
-        <div class="row mt-4 text-center">
-          <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-1-circle text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h4 class="fw-bold">Konsultacja</h4>
-                <p>Bezpłatna rozmowa telefoniczna umożliwi ustalenie podstawowych informacji</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-2-circle text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h4 class="fw-bold">Audyt</h4>
-                <p>Bezpłatny audyt pozwoli przeprowadzić pomiary i oszacować koszty</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-3-circle text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h4 class="fw-bold">Montaż</h4>
-                <p>Profesjonalny montaż przez naszych ekspertów przebiegnie bardzo sprawnie</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12">
-                <i class="bi bi-4-circle text-primary"></i>
-              </div>
-              <div class="col-12">
-                <h4 class="fw-bold">Gwarancja</h4>
-                <p>Oferujemy również wieloletnią gwarancję i pomoc w razie jakichkolwiek problemów</p>
-              </div>
+        <div class="container-fluid bg-primary py-5 mt-5">
+          <div class="row">
+            <div class="col-6 mx-auto text-center text-white">
+              <p class="lead">"Odnawialne źródła energii rozwijają się w Polsce w ostatnich latach bardzo dynamicznie. Ze względu na liczne dotacje dużą popularnością cieszy się fotowoltaika. Według wielu analityków powoli będzie jednak zmieniać się udział mikroinstalacji w polskiej energetyce. Coraz chętniej będziemy stawiać na duże elektrownie słoneczne."</p>
+              <p class="fw-bold">gadzetomania.pl</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid bg-primary py-5 mt-5">
+        <!--<div class="container">
+          <div class="row justify-content-between mt-5">
+            <div class="col-md-10 col-xl-6">
+              <h2 class="display-6">Jak działa panel fotowoltaiczny?</h2>
+              <p>Obsługa klienta w naszej firmie przebiega wedle poniższych 4 kroków. Dzięki takiemu systemowi jesteśmy w stanie obsłużyć Cie szybciej, a jako nasz klient masz większą wiedzę na temat oferty.</p>
+            </div>
+          </div>
+        </div>-->
+      </section>
+      <section id="about" class="homepage-section pt-1">
+        <div class="container px-5 mb-5">
+          <div class="row mt-122-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Poznaj nasz zespół</h1>
+              <p>Zatrudniamy samych najlepszych specjalistów, więc możesz liczyć na obługę na najwyższym poziomie</p>
+            </div>
+          </div>
+          <div class="row gx-5">
+            <div class="col-12 col-lg-4 mt-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div class="row p-5 border border-primary rounded-3 text-center shadow onMouseUp">
+                <div class="col-6 mx-auto">
+                  <img src="./assets/images/face.jpg" class="img-thumbnail rounded-circle">
+                </div>
+                <h2 class="mt-4">Kamil Ślimak</h2>
+                <p class="lead">Marketing</p>
+                <p>Cześć! Jestem Kamil. <br>
+                W zespole zajmuję się marketingiem i odpowiadam za sterowanie wszystkimi kanałami sprzedaży, jak i wizerunek naszej firmy w internecie</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div class="row p-5 border border-primary rounded-3 text-center shadow onMouseUp">
+                <div class="col-6 mx-auto">
+                  <img src="./assets/images/face.jpg" class="img-thumbnail rounded-circle">
+                </div>
+                <h2 class="mt-4">Kamil Ślimak</h2>
+                <p class="lead">Marketing</p>
+                <p>Cześć! Jestem Kamil. <br>
+                W zespole zajmuję się marketingiem i odpowiadam za sterowanie wszystkimi kanałami sprzedaży, jak i wizerunek naszej firmy w internecie</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div class="row p-5 border border-primary rounded-3 text-center shadow onMouseUp">
+                <div class="col-6 mx-auto">
+                  <img src="./assets/images/face.jpg" class="img-thumbnail rounded-circle">
+                </div>
+                <h2 class="mt-4">Kamil Ślimak</h2>
+                <p class="lead">Marketing</p>
+                <p>Cześć! Jestem Kamil. <br>
+                W zespole zajmuję się marketingiem i odpowiadam za sterowanie wszystkimi kanałami sprzedaży, jak i wizerunek naszej firmy w internecie</p>
+              </div>
+            </div>
+          </div>
+            <div class="row mt-122-5">
+              <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+                <h1 class="display-6">Więcej o naszej firmie</h1>
+                <p>Dowiedz się więcej na temat naszej działalności, jak działamy i co obraliśmy za cel.</p>
+              </div>
+            </div>
+            <div class="row mt-5 justify-content-between align-items-center">
+              <div class="col-12 col-lg-6 text-center text-lg-end mt-4">
+                <h2 class="fw-bold">Właśnie rozwijamy skrzydła!</h2>
+                <p class="lead">Dopiero zdobywamy doświadczenie, ale wchodzimy na rynek ze świeżym spojrzeniem</p>
+                <p>Jesteśmy świeżym zespołem, lecz po dogłębnej analizie rynku dostrzegliśmy spore pole do poprawy. Taki jest też nas cel, dostarczyć jak najlepszej jakości usługi i w ten sposób zmotywować jak więcej ludzi do transformacji na montaż paneli słonecznych.</p>
+              </div>
+              <div class="col-12 col-lg-4 d-none d-lg-block mt-4">
+                <img src="./assets/images/wings.jpg" class="img-fluid rounded-3"
+                data-aos="fade-left">
+              </div>
+              <div class="col-12 col-lg-4 d-none d-lg-block mt-4">
+                <img src="./assets/images/panels.jpg" class="img-fluid rounded-3"
+                data-aos="fade-right">
+              </div>
+              <div class="col-12 col-lg-6 text-center text-lg-start mt-4">
+                <h2 class="fw-bold">50 realizacji w pierwszym roku działalności</h2>
+                <p class="lead">Taki obraliśmy cel. Pragniemy wspomóc transformację energetyczną w Polsce</p>
+                <p>Po pandemicznym wyhamowaniu w 2020, rok 2021 był kolejnym z rzędu, w którym karty rozdawały wydarzenia niespodziewane i który odbiegał od wcześniejszych lat stabilizacji. Przeżywaliśmy w Europie kryzys energetyczny, gwałtowne skoki cen gazu i kosztów emisji CO2. Najkorzystniejszym rozwiązaniem da konsumentów i przedsiębiorców jest montaż paneli słonecznych.</p>
+              </div>
+              <div class="col-12 col-lg-6 text-center text-lg-end mt-4">
+                <h2 class="fw-bold">Profesjonalizm, ale i partnerskie podejście</h2>
+                <p class="lead">Każdy klient to coś więcej niż liczba. Do każdego podchodzimy indywidualnie.</p>
+                <p>W pełni rozumiemy, że potrzeby klienta mogą być bardzo zróżnicowane. Staramy się je w pełni zrozumieć, gdyż każdy z nas natrafił kiedyś na gburowatą obsługę. Firmy działające w ten sposób działają na nie korzyść nie tylko sobie, lecz i całej branży. My z kolei chcemy rozwijać zarówno siebie jak i spełniać misję promoania fotowoltaiki wśród polaków. Nasza obsługa więc musi być na najwyższym możliwym poziomie.</p>
+              </div>
+              <div class="col-12 col-lg-4 d-none d-lg-block mt-4">
+                <img src="./assets/images/service.jpg" class="img-fluid rounded-3"
+                data-aos="fade-left">
+              </div>
+            </div>
+        </div>
+      </section>
+      <section id="offer" class="offer-section pt-1">
+        <div class="container mb-5">
+          <div class="row mt-122-5">
+            <div class="col-12 col-md-6 mx-auto text-center">
+              <h1 class="display-6">Gdzie montujemy panele fotowoltaiczne?</h1>
+              <p>Nie wszystkie powierzchnie są przystosowane do montażu paneli, lecz mamy bardzo szeroki wachlarz tych, na których realizacji się podejmujemy.</p>
+            </div>
+          </div>
+          <div class="row mt-5 align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class="col-12" data-aos="fade-right">
+                  <div class="row onMouseRight">
+                    <div class="col-3 text-end">
+                      <i class="bi bi-1-circle fs-1 text-primary"></i>
+                    </div>
+                    <div class="col-9">
+                      <span class="fw-bold fs-4">Dachy skośne</span>
+                      <p class="text-muted">pokryte dachówką ceramiczną, bitumiczną lub betonową. Wykonujemy realizacje również na powierzchniach takich jak papa lub blacha.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-right">
+                  <div class="row onMouseRight">
+                    <div class="col-3 text-end">
+                      <i class="bi bi-2-circle fs-1 text-primary"></i>
+                    </div>
+                    <div class="col-9">
+                      <span class="fw-bold fs-4">Dachy płaskie</span>
+                      <p class="text-muted">o konstrukcji żelbetowej lub drewnianej. Stosujemy kotwy montażowe do krokwi lub rozwiązania balastowe.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-right">
+                  <div class="row onMouseRight">
+                    <div class="col-3 text-end">
+                      <i class="bi bi-3-circle fs-1 text-primary"></i>
+                    </div>
+                    <div class="col-9">
+                      <span class="fw-bold fs-4">Budynki gospodarcze</span>
+                      <p class="text-muted">takie jak garaże, wiaty, stodoły lub podobne.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+              <img src="./assets/images/solarPanel.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Jakie korzyści otrzymasz?</h1>
+              <p>Dowiedz się, dlaczego warto instalować panele słoneczne i z jakimi dokladnie benefitami wiąże się taka inwestycja</p>
+            </div>
+          </div>
+          <div class="row mt-4 text-center">
+            <div class="col-12 col-lg-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-piggy-bank text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Oszczędność pieniędzy</h2>
+                  <p>Wykonana przez nas instalacja sprawi, że Twoje rachunki za energię ograniczą się jedynie do opłaty przesyłowej.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-bandaid text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Zdrowie własne oraz bliskich</h2>
+                  <p>Fotowoltaika nie wytwarza zanieczyszczeń powietrza, chroniąc tym samym środowisko. Co więcej, energia pozyskana ze słońca zastępuje wykorzystanie nieodnawialnych źródeł energii, co umożliwia częściowe rozwiązanie problemu ze smogiem, który degraduje naszą planetę.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up">
+              <div class="row onMouseUp">
+                <div class="col-12">
+                  <i class="bi bi-clock text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h2 class="fw-bold">Krótki okres zwrotu inwestycji</h2>
+                  <p>Dzięki uldze termomodernizacyjnej, dofinansowaniu z programu Mój Prąd i rosnącym cenom prądu średni czas zwrotu inwestycji wynosi od 5 do 6 lat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Ile kosztują nasze usługi?</h1>
+              <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+            </div>
+          </div>
+          <div class="row mt-4 g-5">
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet podstawowy</p>
+                <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+                <p class="fs-1 fw-bold">1400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet podstawowy</p>
+                <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+                <p class="fs-1 fw-bold">1400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet podstawowy</p>
+                <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+                <p class="fs-1 fw-bold">1400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offer2" class="offer-section pt-1">
+        <div class="container mb-5">
+          <div class="row mt-122-5">
+            <div class="col-12 col-md-6 mx-auto text-center">
+              <h1 class="display-6">Dlaczego warto zainwestować?</h1>
+              <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+            </div>
+          </div>
+          <div class="row mt-4 text-center">
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-1-circle text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Optymalizacja kosztów</h4>
+                  <p>Sposobem na oduzależnienie się od wzrostów cen prądu jest produkcja własnej energii.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-2-circle text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Energia źródłem dochodu</h4>
+                  <p>Otwórz się na nowe rynki i stwórz nowe źródło dochodu. Czerp korzyści ze sprzedaży nadwyżki wyprodukowanego prądu.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-3-circle text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Niezależność energetyczna</h4>
+                  <p>Gdy wytwarzasz energię, Twój bizes staje się niezależny energetycznie. Możesz zainwestować również w magazyny przechowujące nadwyżki wyprodukowanej energii.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-3" data-aos="fade-up">
+              <div class="row">
+                <div class="col-12">
+                  <i class="bi bi-4-circle text-primary bigIcon"></i>
+                </div>
+                <div class="col-12">
+                  <h4 class="fw-bold">Finansowanie inwestycji OZE</h4>
+                  <p>Chcesz przeprowadzić transformację energetyczną nie nadwyrężając środków własnych? Znajdziemy dla Ciebie dogodne finansowanie.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Jak przebiega instalacja?</h1>
+              <p>Poznaj najważniejsze punkty z procesu instalacji, by mieć świadomość udogonień które Ci przysługują.</p>
+            </div>
+          </div>
+          <div class="row mt-4 text-center">
+            <div class="col-12 col-lg-8 col-xl-7 mx-auto text-center border border-primary rounded-3 pt-4 pb-2" data-aos="fade-up">
+              <h3 class="fw-bold">Montaż trwa od 2 do 3 dni</h3>
+              <p>Nasi specjaliści przyjadą na miejsce w ustalonym wspólnie terminie i dokonają profesjonalnego montażu.</p>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-7 mx-auto text-center border border-primary rounded-3 pt-4 pb-2 mt-3" data-aos="fade-up">
+              <h3 class="fw-bold">Nie interesują Cię formalności</h3>
+              <p>Nie dokonujemy jedynie montażu. Pomagamy Ci również w uzyskaniu dofinansowania, które znacząco ograniczy koszty.</p>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-7 mx-auto text-center border border-primary rounded-3 pt-4 pb-2 mt-3" data-aos="fade-up">
+              <h3 class="fw-bold">Gwarancja instalacji na rok</h3>
+              <p>Jesteśmy pewni swojej pracy. Jeżeli w przeciągu roku od naszej wizyty wystąpi jakikolwiek problem, zadzwoń do nas. Nasi specjaliście nieodpłatnie dokonają naprawy.</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto text-center">
+              <h1 class="display-6">Ile kosztują nasze usługi?</h1>
+              <p>Poznaj nasze atrakcyjne ceny. Możesz wybrać spośród przygotowanych przez nas pakietów usług lub umówić się na indywidualną wycenę. Jesteśmy otwarci na rozmowy.</p>
+            </div>
+          </div>
+          <div class="row mt-4 g-5">
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet podstawowy</p>
+                <p>Pakiet obejmuje montaż paneli o powierzchni mniejszej lub równej 200m2. W ramach pakietu dokonujemy audytu, tworzymy projekt, montujemy oraz dokonujemy konserwacji przez rok w ramach potrzeb</p>
+                <p class="fs-1 fw-bold">1400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet rozszerzony</p>
+                <p>Pakiet obejmuje montaż paneli o powierzchni mniejszej lub równej 200m2. W ramach pakietu dokonujemy audytu, tworzymy projekt, montujemy oraz dokonujemy konserwacji przez rok w ramach potrzeb</p>
+                <p class="fs-1 fw-bold">2400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="shadow rounded-3 text-center p-5 border border-primary onMouseUp">
+                <p class="fs-4 fw-bold">Pakiet ekstra</p>
+                <p>Pakiet obejmuje montaż paneli o powierzchni mniejszej lub równej 200m2. W ramach pakietu dokonujemy audytu, tworzymy projekt, montujemy oraz dokonujemy konserwacji przez rok w ramach potrzeb</p>
+                <p class="fs-1 fw-bold">3400 zł</p>
+                <a type="button" class="btn btn-outline-primary" href="./contact.html">Zadzwoń do nas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="offer-section pt-1">
+      <div class="container mb-5">
+        <div class="row mt-122-5">
+          <div class="col-12 col-md-6 mx-auto text-center">
+            <h1 class="display-6">Skontaktuj się z nami</h1>
+            <p>Przeczytaj o nas, aby lepiej poznać osoby składające się na naszą ekipę oraz zgłębić przyczyny powstania naszej firmy</p>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-6 mx-auto text-center text-white">
-            <p class="lead">"Odnawialne źródła energii rozwijają się w Polsce w ostatnich latach bardzo dynamicznie. Ze względu na liczne dotacje dużą popularnością cieszy się fotowoltaika. Według wielu analityków powoli będzie jednak zmieniać się udział mikroinstalacji w polskiej energetyce. Coraz chętniej będziemy stawiać na duże elektrownie słoneczne."</p>
-            <p class="fw-bold">gadzetomania.pl</p>
+          <div class="col-12 col-lg-3 mt-5 order-2 order-lg-1">
+            <div class="card p-3 rounded-3 border-primary">
+              <div class="card-body text-center text-lg-start">
+                <p class="fs-3 fw-bold text-primary">pv foton</p>
+                <p>40-100, Katowice</p>
+                <p>ul. Korfantego 12</p>
+                <p>info@pvfoton.pl</p>
+                <p>NIP: 123-45-67-890</p>
+                <p class="mb-5">REGON: 123-45-67-890</p>
+                <p class="fw-bold">+48 123 456 789</p>
+                <p class="fw-bold">+48 123 456 789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 mt-5 order-1 order-lg-2">
+            <div class="map-responsive rounded-3 shadow">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20400.93088400899!2d19.012384744361903!3d50.271085914602175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce3625d0c817%3A0x4cbf142f554df780!2sWirtualne%20Biuro%20Katowice!5e0!3m2!1spl!2spl!4v1659769455293!5m2!1spl!2spl" width="640" height="450" style="border:0;" frameBorder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
-      <!--<div class="container">
-        <div class="row justify-content-between mt-5">
-          <div class="col-md-10 col-xl-6">
-            <h2 class="display-6">Jak działa panel fotowoltaiczny?</h2>
-            <p>Obsługa klienta w naszej firmie przebiega wedle poniższych 4 kroków. Dzięki takiemu systemowi jesteśmy w stanie obsłużyć Cie szybciej, a jako nasz klient masz większą wiedzę na temat oferty.</p>
-          </div>
-        </div>
-      </div>-->
     </section>
+    </div>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
