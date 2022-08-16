@@ -10838,6 +10838,18 @@ h1, .h1 {
   height: 50vh;
 }
 
+.vh-45 {
+  height: 45vh;
+}
+
+.vh-55 {
+  height: 55vh;
+}
+
+.ptop-10 {
+  padding-top: 10vh;
+}
+
 @media (min-width: 992px) {
   .vh-lg-100 {
     height: 100vh;
